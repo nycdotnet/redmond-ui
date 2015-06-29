@@ -1,4 +1,5 @@
-Copyright (c) 2014 GitHub Inc.
+redmond-ui theme copyright (c) 2015 Steve Ognibene
+atom-light-ui theme copyright (c) 2014 GitHub Inc.
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the

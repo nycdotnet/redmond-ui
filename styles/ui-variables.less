@@ -1,13 +1,13 @@
 // Colors
 
-@text-color: #444;
+@text-color: #000;
 @text-color-subtle: #999;
 @text-color-highlight: #000;
 @text-color-selected: #fff;
 
 @text-color-info: #5293d8;
 @text-color-success: #45A815;
-@text-color-warning: #CD8E00;
+@text-color-warning: @file-modified-color;
 @text-color-error: #c00;
 
 @text-color-ignored: @text-color-subtle;
@@ -57,7 +57,7 @@
 @tab-background-color-active: #f0f0f0;
 @tab-border-color: lighten(@base-border-color, 10%);
 
-@tree-view-background-color: #eee;
+@tree-view-background-color: white;
 @tree-view-border-color: @base-border-color;
 
 @ui-site-color-1: @background-color-success; // green
@@ -65,6 +65,8 @@
 @ui-site-color-3: @background-color-warning; // orange
 @ui-site-color-4: #db2ff4; // purple
 @ui-site-color-5: #f5e11d; // yellow
+
+@file-modified-color: #21a4e4;
 
 
 // Sizes

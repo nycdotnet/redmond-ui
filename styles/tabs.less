@@ -9,7 +9,7 @@
 
 .tab-bar {
   height: @tab-height + @tab-top-padding + @tab-bottom-border-height;
-  background-image: -webkit-linear-gradient(top, @tab-bar-background-color, lighten(@tab-bar-background-color, 9%));
+  background-color: @tab-bar-background-color;
   box-shadow: inset 0 -8px 8px -4px rgba(0,0,0, .15);
   padding: 0 10px 0 25px;
   overflow-x: auto;
@@ -27,6 +27,7 @@
     left: 0;
     right: 0;
     background-color: @tab-background-color-active;
+    color: @text-color;
     border-bottom: 1px solid @tab-bar-border-color;
     border-top: 1px solid @tab-border-color;
     pointer-events: none;
@@ -38,7 +39,7 @@
     max-width: @tab-max-width;
     height: @tab-height;
     line-height: @tab-height;
-    color: @text-color;
+    color: @tab-text-color;
     padding: 0;
     margin: 0 20px 0 5px;
 
@@ -83,9 +84,6 @@
       line-height: @tab-height;
       color: @text-color;
 
-      &:hover {
-        color: inherit;
-      }
     }
 
     &.modified:not(:hover) .close-icon {
@@ -93,10 +91,6 @@
       top: @tab-height/2 - @modified-icon-width/2 + 1px;
       width: @modified-icon-width;
       height: @modified-icon-width;
-    }
-
-    &.modified:hover .close-icon:hover {
-      color: @text-color-highlight;
     }
 
     .title {
@@ -120,19 +114,18 @@
       height: @tab-height + 1px;
       box-shadow: none;
     }
-  }
 
-  .tab:hover {
-    color: @text-color-highlight;
-  }
-
-  .tab.active:hover .close-icon {
-    color: @text-color;
-
-    &:hover {
-      color: inherit;
+    &:hover, &:hover:before, &:hover:after {
+      color: @text-color;
+      background-color: lighten(@tab-background-color-active,5%);
     }
+
   }
+
+  .tab:hover, &:before, &:after {
+    color: lighten(@tab-text-color,20%);
+  }
+
 
   .placeholder {
     height: @tab-height + @tab-top-padding + @tab-bottom-border-height;

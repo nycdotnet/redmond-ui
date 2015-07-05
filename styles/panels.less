@@ -54,3 +54,26 @@ atom-panel, .tool-panel {
     .btn-background(@bg, @hover, @selected, @button-border-color, @text, @text);
   }
 }
+
+.status-bar {
+  background-color: #007acc;
+  text-shadow: none;
+  .cursor-position,
+  .file-info,
+  .encoding-status > .inline-block,
+  .grammar-status > .inline-block,
+  .git-branch > .icon-git-branch,
+  .git-branch > .branch-label,
+  .git-status.inline-block > .status-modified,
+    {
+    color: #ffffff;
+    }
+}
+
+.icon-git-branch::before {
+  -webkit-font-smoothing: none;
+}
+
+.icon-diff-modified::before {
+  -webkit-font-smoothing: none;
+}

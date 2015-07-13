@@ -79,3 +79,16 @@ code {
 .highlight-color(warning, @background-color-warning);
 .highlight-color(error, @background-color-error);
 .highlight-color(success, @background-color-success);
+
+atom-text-editor::shadow, .tree-view-resizer {
+    ::-webkit-scrollbar {
+        width: 0.8em;
+        height: 0.8em;
+    }
+    ::-webkit-scrollbar-track {
+      background-color: #e8e8ec;
+    }
+    ::-webkit-scrollbar-thumb {
+      background-color: #d0d1d7;
+    }
+}

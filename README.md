@@ -4,7 +4,7 @@ An Atom UI theme for fans of the Visual Studio Blue theme.
 
 This is a UI theme; for the complimentary syntax theme, please also download [redmond-syntax](https://atom.io/themes/redmond-syntax).
 
-The main UI elements are mostly in-place.  Remaining significant work is colorization/icons on the tree view.
+The main UI elements are mostly in-place.  Remaining significant work is colorization/icons on the tree view and squaring-off the tabs.
 
 Written by [Steve Ognibene](http://www.legendaryapps.com/) ([@nycdotnet](https://twitter.com/nycdotnet)).
 
